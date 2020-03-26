@@ -1,0 +1,19 @@
+{
+  "name": "sisal-mvp-betting-library",
+  "version": "0.1.0",
+  "devDependencies": {
+    "typescript": "^3.8.3",
+    "ts-loader": "^6.2.2",
+    "source-map-loader": "^0.2.4",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "babel-jest": "^24.9.0",
+    "identity-obj-proxy": "^3.0.0",
+    "node-sass": "^4.13.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "scripts": {
+    "start": "webpack"
+  }
+}
