@@ -1,5 +1,45 @@
 {
   "name": "sisal-mvp-betting-library",
+<<<<<<< HEAD
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "test": "jest",
+    "start": "npm run build -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://pansetta.crispybacon.it/enrico.canova/sisal-mvp-betting-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "jest": "^25.2.1",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3"
+  },
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
+  },
+  "dependencies": {
+    "@types/node": "^12.12.31"
+=======
   "version": "0.1.0",
   "devDependencies": {
     "typescript": "^3.8.3",
@@ -15,5 +55,6 @@
   },
   "scripts": {
     "start": "webpack"
+>>>>>>> b3ab102fa0c45456e3dbfb256eb675bd12018530
   }
 }
