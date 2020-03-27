@@ -1,9 +1,9 @@
-import hailMe from "./libs/hailMe.library";
-import pingMe from "./libs/pingMe.library";
+import SisalStore from "./store";
+import SisalTranslations from "./translations";
 
-const libs = {
-    hailMe,
-    pingMe,
+const libraries = {
+  Store: SisalStore,
+  Translations: SisalTranslations
 };
 
-export default libs;
+export default libraries;

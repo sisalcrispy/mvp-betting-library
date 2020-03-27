@@ -1,9 +1,14 @@
 {
   "name": "sisal-mvp-betting-library",
-  "version": "0.1.8",
+  "version": "0.1.17",
+  "dependencies": {
+    "i18next": "^19.3.3",
+    "react-i18next": "^11.3.4"
+  },
   "devDependencies": {
     "typescript": "^3.8.3",
     "ts-loader": "^6.2.2",
+    "@types/react": "^16.9.25",
     "source-map-loader": "^0.2.4",
     "@babel/core": "^7.9.0",
     "babel-loader": "^8.1.0",

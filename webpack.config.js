@@ -29,6 +29,11 @@ module.exports =  (env, argv) => {
             filename: "public.js",
             libraryTarget: 'commonjs2'
         },
+        externals: {
+            // Use external version of React
+            "react": "react"
+        },
+
 
     });
 
