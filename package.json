@@ -1,42 +1,29 @@
 {
   "name": "sisal-mvp-betting-library",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "prepare": "npm run build",
-    "build": "tsc",
-    "test": "jest",
-    "start": "npm run build -- -w"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://pansetta.crispybacon.it/enrico.canova/sisal-mvp-betting-library.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/jest": "^25.1.4",
-    "jest": "^25.2.1",
-    "ts-jest": "^25.2.1",
-    "typescript": "^3.8.3"
-  },
-  "typings": "lib/index.d.ts",
-  "files": [
-    "lib"
-  ],
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ],
-    "testRegex": "^.+\\.spec\\.ts$"
-  },
+  "version": "0.1.17",
   "dependencies": {
-    "@types/node": "^12.12.31"
+    "i18next": "^19.3.3",
+    "react-i18next": "^11.3.4"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3",
+    "ts-loader": "^6.2.2",
+    "@types/react": "^16.9.25",
+    "source-map-loader": "^0.2.4",
+    "@babel/core": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "node-sass": "^4.13.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "path": "^0.12.7",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "main": "dist/public.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   }
 }
