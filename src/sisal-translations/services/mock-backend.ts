@@ -1,6 +1,3 @@
-import * as React from 'react';
-import i18n from 'i18next';
-import {initReactI18next} from 'react-i18next';
 
 const translationEN = {
     global: {
@@ -50,44 +47,28 @@ const translationIT = {
 
 
 const mockFetchLanguagePack = (languagePackName: string): any => {
+    let resources = {};
     switch (languagePackName) {
         case 'module':
-            return {
+            resources = {
                 en: {translation:translationEN.module},
                 it: {translation:translationIT.module}
             };
+            break;
         default:
-            return {
+           resources = {
                 en: {translation:translationEN.global},
                 it: {translation:translationIT.global}
             };
+            break;
     }
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(resources);
+        }, 800);
+    });
+
+
 };
 
-
-const TranslationsService = (languagePack: string) => {
-    const translations = i18n;
-    const init = (resources: any) => translations.use(initReactI18next).init({
-            resources,
-            lng: 'en',
-            keySeparator: '.',
-            interpolation: {
-                escapeValue: false,
-            },
-        }, () => {});
-    init(mockFetchLanguagePack(languagePack));
-
-    const t = (stringCode: string): string => translations.t(stringCode);
-    const otherLanguage = (): string => (translations.language === 'it' ? 'en' : 'it');
-
-    const switchLanguage = (): void => {
-        translations.changeLanguage(otherLanguage());
-    };
-
-    return {
-        t, otherLanguage, switchLanguage,
-    };
-};
-
-
-export default TranslationsService;
+export default mockFetchLanguagePack;

@@ -1,5 +1,4 @@
 import React, {Context, useContext, useState} from 'react';
-import InitializeContext from "./initialize-context.component";
 import ContextInterface from "../interfaces/contextInterface.interface";
 
 const ContextProvider = (props: { context: Context<ContextInterface>, children: any }) => {
@@ -19,15 +18,10 @@ const ContextProvider = (props: { context: Context<ContextInterface>, children: 
         return actions(commit)[actionName](payload);
     };
 
-
-
-
     return (
         <>
             <Provider value={{store, state, dispatch}}>
-
-                    {children}
-
+                {children}
             </Provider>)
         </>
     );

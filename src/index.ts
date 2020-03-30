@@ -1,5 +1,5 @@
-import SisalStore from "./store";
-import SisalTranslations from "./translations";
+import SisalStore from "./sisal-store";
+import SisalTranslations from "./sisal-translations";
 
 const libraries = {
   Store: SisalStore,

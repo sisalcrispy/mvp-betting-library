@@ -1,6 +1,6 @@
 {
   "name": "sisal-mvp-betting-library",
-  "version": "0.1.17",
+  "version": "0.1.23",
   "dependencies": {
     "i18next": "^19.3.3",
     "react-i18next": "^11.3.4"
@@ -23,7 +23,7 @@
   "main": "dist/public.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "webpack --mode development",
+    "start": "webpack --watch --info-verbosity verbose --mode development",
     "build": "webpack --mode production"
   }
 }
