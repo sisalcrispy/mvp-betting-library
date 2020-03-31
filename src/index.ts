@@ -1,9 +1,7 @@
-import SisalStore from "./sisal-store";
-import SisalTranslations from "./sisal-translations";
+import * as ReactDOM from 'react-dom';
 
-const libraries = {
-  Store: SisalStore,
-  Translations: SisalTranslations
-};
+import App from './components/app/app.component';
 
-export default libraries;
+import './styles/index.scss';
+
+ReactDOM.render(App(), document.getElementById('root'));
