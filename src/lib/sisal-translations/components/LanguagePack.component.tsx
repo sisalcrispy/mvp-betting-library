@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import TranslationsService from "../services/translations.service";
+import LoadingPlaceholder from "../../../components/loading-placeholder/loading-placeholder.component";
 const LanguagePack = (props: any) => {
     const {languagePack, children} = props;
     const [isInitialized, setIsInitialized] = useState(false);
@@ -10,7 +11,7 @@ const LanguagePack = (props: any) => {
     return (
         <>
             {!isInitialized ?
-                (<div>loading...</div>)
+                (<LoadingPlaceholder />)
                 :
 
                 (<>{children}</>)

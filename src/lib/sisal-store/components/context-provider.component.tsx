@@ -22,7 +22,7 @@ const ContextProvider = (props: { context: Context<ContextInterface>, children: 
         <>
             <Provider value={{store, state, dispatch}}>
                 {children}
-            </Provider>)
+            </Provider>
         </>
     );
 };

@@ -22,6 +22,7 @@ const TranslationsService = () => {
     };
 
     const t = (stringCode: string): string => translations.t(stringCode);
+    const currentLanguage = (): string => (translations.language);
     const otherLanguage = (): string => (translations.language === 'it' ? 'en' : 'it');
 
     const switchLanguage = (): void => {
@@ -29,7 +30,7 @@ const TranslationsService = () => {
     };
 
     return {
-       init, t, otherLanguage, switchLanguage,
+       init, t, otherLanguage, currentLanguage, switchLanguage,
     };
 };
 

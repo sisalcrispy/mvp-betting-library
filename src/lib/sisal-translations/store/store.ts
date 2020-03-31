@@ -3,11 +3,12 @@ import mutations from "./mutations";
 import TranslationsService from "../services/translations.service";
 
 
-const {t, otherLanguage} = TranslationsService();
+const {t, otherLanguage, currentLanguage} = TranslationsService();
 
 const initialState = {
     t,
-    otherLanguage
+    otherLanguage,
+    currentLanguage
 };
 
 
