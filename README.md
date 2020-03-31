@@ -23,7 +23,7 @@ Quindi eseguire il pacchetto come un normale modulo javascript. Per esempio nel 
  ``const {createStore} = Sisal.Store();``
 
 
-###Specifiche tecniche:
+### Specifiche tecniche:
 - React: 16.13.0
 - Hooks: attivi
 - Linguaggio: Typescript
@@ -32,7 +32,7 @@ Quindi eseguire il pacchetto come un normale modulo javascript. Per esempio nel 
 
 
 
-###Contenuti:
+### Contenuti:
 Il modulo al momento esporta due librerie:
 - Sisal.Store()
 - Sisal.Translations()
@@ -52,6 +52,7 @@ src/lib/sisal-store`` e sono accessibili all'esterno attraverso il già citato:
  Lo store è un oggetto formato da da:
 
 - initialState: un oggetto con le proprietà dello stato e i loro valori iniziali.
+
 ```
 initialState = {
     myVar: false,
@@ -81,7 +82,7 @@ const actions =  (commit: (commitName: string, payload?: any) => void) => {
 ```
 const mutations = (state: any) => {
     const toggleMyVar = () => {
-        return {myVar: state.!myVar};
+        return {myVar: !state.myVar};
     };
 
     const changeYourVar = (newValue: string) => {
