@@ -30,7 +30,7 @@ const sassLoader = {
 
 const entry = {
     prod: path.resolve(__dirname, 'src/export.ts'),
-    dev: path.resolve(__dirname, 'src/index.tsx'),
+    dev: path.resolve(__dirname, 'src/index.ts'),
 };
 
 const output = {
