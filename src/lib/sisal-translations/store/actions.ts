@@ -7,7 +7,7 @@ const actions =  (commit: (commitName: string, payload?: any) => void) => {
         switchLanguage();
         commit('setT', t);
         commit('setOtherLanguage', otherLanguage);
-        commit('setCurrentLangugage', currentLanguage);
+        commit('setCurrentLanguage', currentLanguage);
         return Promise.resolve(true);
     };
 

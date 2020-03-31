@@ -5,11 +5,11 @@ import mockFetchLanguagePack from "./mock-backend";
 
 const TranslationsService = () => {
     const translations = i18n;
-    const init = (languagePack: string) => {
+    const init = (languagePack: string, language: string) => {
        return mockFetchLanguagePack(languagePack).then((resources:any) => {
            translations.use(initReactI18next).init({
                 resources,
-                lng: 'en',
+                lng: language,
                 keySeparator: '.',
                 interpolation: {
                     escapeValue: false,
@@ -18,7 +18,6 @@ const TranslationsService = () => {
             });
             return Promise.resolve(true);
         });
-
     };
 
     const t = (stringCode: string): string => translations.t(stringCode);

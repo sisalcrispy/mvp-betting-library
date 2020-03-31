@@ -18,7 +18,11 @@ const translationEN = {
         }
     },
     module: {
-        "you_are_in_the_module": "You are in the module"
+        "module": "Module",
+        "you_are_in_the_module": "You are in the module",
+        "services_are_libraries": "Translations, store manager and global styles are imported as libaries",
+        "examples": "Examples",
+        "this_green_is_global": "This green is global"
     }
 };
 
@@ -41,7 +45,11 @@ const translationIT = {
         }
     },
     module: {
-        "you_are_in_the_module": "Sei nel modulo"
+        "module": "Modulo",
+        "you_are_in_the_module": "Sei nel modulo",
+        "services_are_libraries": "Le traduzioni, lo store manager e gli stili globali sono importati come librerie",
+        "examples": "Esempi",
+        "this_green_is_global": "Questo verde è globale"
     }
 };
 
