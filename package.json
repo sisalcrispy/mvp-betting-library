@@ -1,6 +1,6 @@
 {
     "name": "sisal-mvp-betting-library",
-    "version": "0.1.48",
+    "version": "0.1.49",
     "dependencies": {
         "i18next": "^19.3.3",
         "react-i18next": "^11.3.4"
