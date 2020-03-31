@@ -78,13 +78,17 @@ module.exports = (env, argv) => {
     const isDev = argv.mode === "development";
 
     return ({
-        entry: entry.dev,
+        entry: isDev ? entry.dev : entry.prod,
         mode: argv.mode,
+
         module: {
             rules: [
                 {
                     test: /\.(ts|tsx)$/,
-                    exclude: /(node_modules)/,
+                    exclude: [
+                        /(node_modules|bower_components|unitTest)/,
+                        path.resolve(__dirname, 'src/index.ts'),
+                    ],
                     use: "ts-loader",
                 },
                 {

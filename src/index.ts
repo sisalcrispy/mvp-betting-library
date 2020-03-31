@@ -1,15 +1,5 @@
-import './styles/main';
-import SisalStore from "./lib/sisal-store";
-import SisalTranslations from "./lib/sisal-translations";
+import * as ReactDOM from 'react-dom';
 
-import LoadingPlaceholder from "./components/loading-placeholder/loading-placeholder.component";
+import App from './components/app/app.component';
 
-
-export const libraries = {
-  Store: SisalStore,
-  Translations: SisalTranslations,
-  LoadingPlaceholder
-};
-
-export default libraries;
-
+ReactDOM.render(App(), document.getElementById('root'));
